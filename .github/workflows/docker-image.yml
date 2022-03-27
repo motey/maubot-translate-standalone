@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file dockerfile --tag maubot-translator-standalone:$(date +%s) -t maubot-translator-standalone:latest
+      run: docker build --no-cache . --file dockerfile --tag maubot-translator-standalone:$(date +%s) -t maubot-translator-standalone:latest
     - name: Publish to Registry
       uses: HurricanKai/Publish-Docker-Github-Action@master
       with:
