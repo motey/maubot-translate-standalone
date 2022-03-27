@@ -2,8 +2,7 @@ version: '3.7' # specify docker-compose version
 
 services:
   matrix-translate-bot:
-    #image: motey/maubot-translator-standalone:latest
-    image: test
+    image: motey/maubot-translator-standalone:latest
     restart: always
     volumes:
       - ./_state/data:/data

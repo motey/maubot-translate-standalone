@@ -35,6 +35,11 @@ plugin_config:
     - room_id: "^![A-Za-z0-9._%+-]+_ru_translator:matrix.my.org$"
       main_language: de
       accepted_languages: [ru]
+      # which python language detector should be used.
+      # possible values 
+      # 'langid' -> https://pypi.org/project/langid/
+      # 'langdetect' -> https://pypi.org/project/langdetect/
+      detector: langid
   # Whether bot responses should use Matrix replies.
   response_reply: true
 
