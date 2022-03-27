@@ -2,6 +2,8 @@
 
 function fixperms {
     chown -R $UID:$GID /var/log /data /config /opt/maubot
+    chmod a+rw /config/
+    chmod a+rw /config/*
 }
 
 cd /opt/maubot/
