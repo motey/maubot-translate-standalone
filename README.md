@@ -3,6 +3,7 @@
 # translate
 A [maubot](https://github.com/maubot/maubot) to translate words using Google Translate (DeepL is planned too)
 
+
 ## Usage
 
 After inviting the bot to your room, simply use the `!translate` command:
